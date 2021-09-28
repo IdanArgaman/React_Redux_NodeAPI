@@ -1,0 +1,38 @@
+.Employee {
+    width: 80%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    display: flex;
+
+    background-color: white;
+
+}
+.Employee:hover  {
+    box-shadow: #d9ebf7 0px 5px 15px;
+}
+
+.Employee img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.Employee .Content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    font-weight: bold;
+    color: #3f4853
+}
+
+.Employee .Content .Name {
+    display: inline-block;
+    padding: 5px 0;
+}

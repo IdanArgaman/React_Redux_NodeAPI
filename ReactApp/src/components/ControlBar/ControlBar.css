@@ -1,0 +1,9 @@
+.ControlBar {
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
