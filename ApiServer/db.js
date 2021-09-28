@@ -1,26 +1,28 @@
- export const db = [
-    {
-      "id": 1,
-      "name": "John",
-      "status": "Working",
-      "img": "example1"
-    },
-    {
-      "id": 2,
-      "name": "Jack",
-      "status": "Vacation",
-      "img": "example2"
-    },
-    {
-      "id": 3,
-      "name": "Sheli",
-      "status": "Working",
-      "img": "example3"
-    },
-    {
-      "id": 4,
-      "name": "Eitan",
-      "status": "Working",
-      "img": "example4"
-    }
-  ];
+ export let db = [
+      {
+        "id": 1,
+        "name": "John",
+        "status": "Working",
+        "img": "example1"
+      },
+      {
+        "id": 2,
+        "name": "Jack",
+        "status": "Vacation",
+        "img": "example2"
+      },
+      {
+        "id": 3,
+        "name": "Sheli",
+        "status": "Working",
+        "img": "example3"
+      },
+      {
+        "id": 4,
+        "name": "Eitan",
+        "status": "Working",
+        "img": "example4"
+      }
+    ];
+
+

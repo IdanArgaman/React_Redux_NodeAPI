@@ -1,31 +1,21 @@
 import {db} from '../db'
-
 export class Employee {
     getEmployees() {
         return Promise.resolve(db);
     }
 
     updateEmployee(data) {
-      let found = db.find(e => e.id === data.id);
+      let foundIdx = db.findIndex(e => e.id === data.id);
 
-      if(!found) {
+      if(foundIdx === -1) {
         throw new Error(`Employee not found. Employee ID: ${employee.id}`)
       }
      
-      found = {
-        ...found,
+      db[foundIdx] = {
+        ...db[foundIdx],
         ...data
-      };
+      }
 
-      db.forEach(employee => {
-        if(employee.id === found.id) {
-          employee = {
-            ...employee,
-            ...found
-          }
-        }
-      })
-
-      return Promise.resolve(found);
+      return Promise.resolve(db[foundIdx]); 
   }
 }
